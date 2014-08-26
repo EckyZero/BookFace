@@ -1,0 +1,13 @@
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\bin\Debug\BookFace.dll
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\bin\Debug\BookFace.pdb
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\bin\Debug\BookFace.dll.mdb
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\bin\Debug\BookFace.BookFace.apk
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\bin\Debug\BookFace.BookFace-Signed.apk
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\BookFace.dll
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\BookFace.pdb
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\android\bin\BookFace.BookFace.apk
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\res\layout\main.xml
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\res\values\strings.xml
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\res\drawable\icon.png
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\R.cs.flag
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\uploadflags.txt
