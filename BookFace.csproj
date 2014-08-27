@@ -16,8 +16,6 @@
     <AssemblyName>BookFace</AssemblyName>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,6 +50,7 @@
     <Compile Include="Resources\Models\User.cs" />
     <Compile Include="UserAdapter.cs" />
     <Compile Include="Resources\AddActivity.cs" />
+    <Compile Include="Resources\BitmapHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
