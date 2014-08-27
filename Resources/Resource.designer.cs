@@ -24,10 +24,6 @@ namespace BookFace
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
-		public static void UpdateIdValues()
-		{
-		}
-		
 		public partial class Attribute
 		{
 			
@@ -68,6 +64,9 @@ namespace BookFace
 			
 			// aapt resource value: 0x7f070005
 			public const int action_add_user = 2131165189;
+			
+			// aapt resource value: 0x7f070006
+			public const int action_save_user = 2131165190;
 			
 			// aapt resource value: 0x7f070000
 			public const int imageButton = 2131165184;
@@ -121,6 +120,9 @@ namespace BookFace
 			
 			// aapt resource value: 0x7f060000
 			public const int ActionBar = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int save_actionbar = 2131099649;
 			
 			static Menu()
 			{

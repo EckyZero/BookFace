@@ -52,6 +52,26 @@ namespace BookFace
 			}
 		}
 
+		public override bool OnCreateOptionsMenu(IMenu menu)
+		{
+			MenuInflater.Inflate(Resource.Menu.save_actionbar, menu);
+			return base.OnCreateOptionsMenu(menu);
+		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			switch (item.ItemId)
+			{
+			case Resource.Id.action_save_user:
+			
+				User user = new User (App.bitmap
+
+				break;
+			}
+			return base.OnOptionsItemSelected(item);
+		}
+
+
 		private bool IsThereAnAppToTakePictures()
 		{
 			Intent intent = new Intent(MediaStore.ActionImageCapture);
