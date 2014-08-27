@@ -1,1 +1,3 @@
 BookFace.MainActivity;bookface.MainActivity
+BookFace.UserAdapter;bookface.UserAdapter
+BookFace.AddActivity;bookface.AddActivity

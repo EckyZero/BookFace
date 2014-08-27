@@ -11,3 +11,7 @@ C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\res\values
 C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\res\drawable\icon.png
 C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\R.cs.flag
 C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\uploadflags.txt
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\res\layout\usercell.xml
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\res\drawable\add.png
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\res\menu\actionbar.xml
+C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\obj\Debug\res\layout\add_layout.xml
