@@ -1,1 +1,3 @@
-C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\bin\Debug\BookFace.dll
+C:\Users\daniel.esponda\Documents\GitHub\BookFace\bin\Debug\BookFace.dll
+C:\Users\daniel.esponda\Documents\GitHub\BookFace\ParseLib\Parse.iOS\Newtonsoft.Json.dll
+C:\Users\daniel.esponda\Documents\GitHub\BookFace\ParseLib\Parse.Android\Parse.Android.dll
