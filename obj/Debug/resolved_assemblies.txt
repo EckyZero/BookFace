@@ -1,1 +1,1 @@
-C:\Users\erik.andersen\Documents\Projects\BookFace\BookFace\bin\Debug\BookFace.dll
+C:\Users\hans.stegemoeller\Documents\GitHub\BookFace\bin\Debug\BookFace.dll

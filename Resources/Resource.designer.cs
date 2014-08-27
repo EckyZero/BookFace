@@ -50,9 +50,6 @@ namespace BookFace
 			// aapt resource value: 0x7f020001
 			public const int Icon = 2130837505;
 			
-			// aapt resource value: 0x7f020002
-			public const int monoandroidsplash = 2130837506;
-			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -66,23 +63,23 @@ namespace BookFace
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070005
-			public const int action_add_user = 2131165189;
+			// aapt resource value: 0x7f060005
+			public const int action_add_user = 2131099653;
 			
-			// aapt resource value: 0x7f070000
-			public const int imageButton = 2131165184;
+			// aapt resource value: 0x7f060000
+			public const int imageButton = 2131099648;
 			
-			// aapt resource value: 0x7f070002
-			public const int listView = 2131165186;
+			// aapt resource value: 0x7f060002
+			public const int listView = 2131099650;
 			
-			// aapt resource value: 0x7f070001
-			public const int nameTextField = 2131165185;
+			// aapt resource value: 0x7f060001
+			public const int nameTextField = 2131099649;
 			
-			// aapt resource value: 0x7f070004
-			public const int nameTextView = 2131165188;
+			// aapt resource value: 0x7f060004
+			public const int nameTextView = 2131099652;
 			
-			// aapt resource value: 0x7f070003
-			public const int photoImageView = 2131165187;
+			// aapt resource value: 0x7f060003
+			public const int photoImageView = 2131099651;
 			
 			static Id()
 			{
@@ -119,8 +116,8 @@ namespace BookFace
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int ActionBar = 2131099648;
+			// aapt resource value: 0x7f050000
+			public const int ActionBar = 2131034112;
 			
 			static Menu()
 			{
@@ -141,28 +138,15 @@ namespace BookFace
 			// aapt resource value: 0x7f040000
 			public const int hello = 2130968576;
 			
+			// aapt resource value: 0x7f040002
+			public const int open_camera = 2130968578;
+			
 			static String()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
 			private String()
-			{
-			}
-		}
-		
-		public partial class Style
-		{
-			
-			// aapt resource value: 0x7f050000
-			public const int Mono_Android_Theme_Splash = 2131034112;
-			
-			static Style()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Style()
 			{
 			}
 		}
