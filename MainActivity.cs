@@ -30,10 +30,10 @@ namespace BookFace
 			listView = FindViewById<ListView> (Resource.Id.listView);
 			listView.OnItemClickListener = this;
 
-			poopie ();
+			sync ();
 		}
 
-		private async void poopie ()
+		private async void sync ()
 		{
 			var query = new ParseQuery<User> ();
 			IEnumerable<User> result = await query.FindAsync ();

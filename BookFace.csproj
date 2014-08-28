@@ -51,6 +51,7 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>ParseLib\Parse.iOS\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
