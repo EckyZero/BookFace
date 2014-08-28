@@ -1,10 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Resources\AddActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Resources\ProfileActivity.cs">
     <Files>
-      <File FileName="Resources\AddActivity.cs" Line="10" Column="10" />
-      <File FileName="Resources\Models\User.cs" Line="2" Column="2" />
-      <File FileName="Resources\BitmapHelper.cs" Line="45" Column="45" />
+      <File FileName="MainActivity.cs" Line="29" Column="29" />
+      <File FileName="Resources\AddActivity.cs" Line="3" Column="3" />
+      <File FileName="Resources\Models\User.cs" Line="3" Column="3" />
+      <File FileName="Resources\BitmapHelper.cs" Line="1" Column="1" />
+      <File FileName="UserAdapter.cs" Line="1" Column="1" />
+      <File FileName="Resources\ProfileActivity.cs" Line="4" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

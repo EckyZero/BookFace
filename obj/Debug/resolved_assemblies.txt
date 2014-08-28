@@ -1,3 +1,3 @@
-C:\Users\hans.stegemoeller\Documents\GitHub\BookFace\bin\Debug\BookFace.dll
-C:\Users\hans.stegemoeller\Documents\GitHub\BookFace\ParseLib\Parse.iOS\Newtonsoft.Json.dll
-C:\Users\hans.stegemoeller\Documents\GitHub\BookFace\ParseLib\Parse.Android\Parse.Android.dll
+C:\Users\erik.andersen\Documents\GitHub\BookFace\bin\Debug\BookFace.dll
+C:\Users\erik.andersen\Documents\GitHub\BookFace\ParseLib\Parse.iOS\Newtonsoft.Json.dll
+C:\Users\erik.andersen\Documents\GitHub\BookFace\ParseLib\Parse.Android\Parse.Android.dll

@@ -8,6 +8,8 @@ using Android.Widget;
 using Android.OS;
 using Parse;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Java.IO;
 
 namespace BookFace
 {
@@ -15,6 +17,7 @@ namespace BookFace
 	public class MainActivity : Activity, ListView.IOnItemClickListener
 	{
 		ListView listView;
+		User[] users;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -37,15 +40,8 @@ namespace BookFace
 		{
 			var query = new ParseQuery<User> ();
 			IEnumerable<User> result = await query.FindAsync ();
-			var userList = new List<User> (result);
-			listView.Adapter = new UserAdapter (this, userList.ToArray());
-		}
-
-		protected override void OnResume () 
-		{
-			base.OnResume ();
-
-
+			users = new List<User> (result).ToArray();
+			listView.Adapter = new UserAdapter (this, users);
 		}
 
 		public override bool OnCreateOptionsMenu(IMenu menu)
@@ -72,7 +68,12 @@ namespace BookFace
 
 		public void OnItemClick (AdapterView parent, View view, int position, long id)
 		{
-			// TODO:Respond to row press 
+			User user = users [position];
+			Intent intent = new Intent (this, typeof(ProfileActivity));
+
+			intent.PutExtra ("User", user.ObjectId);
+
+			StartActivity (intent);
 		}
 
 		#endregion
