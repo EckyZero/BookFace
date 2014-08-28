@@ -69,8 +69,11 @@ namespace BookFace
 			// aapt resource value: 0x7f070005
 			public const int action_add_user = 2131165189;
 			
+			// aapt resource value: 0x7f070007
+			public const int action_save_user = 2131165191;
+			
 			// aapt resource value: 0x7f070006
-			public const int action_save_user = 2131165190;
+			public const int action_sync = 2131165190;
 			
 			// aapt resource value: 0x7f070000
 			public const int imageButton = 2131165184;
