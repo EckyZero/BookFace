@@ -1,4 +1,5 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="Android.Nex7" />
   <MonoDevelop.Ide.Workbench ActiveDocument="PullDownSync.cs">
     <Files>
@@ -8,6 +9,17 @@
       <File FileName="MainActivity.cs" Line="43" Column="43" />
       <File FileName="UserAdapter.cs" Line="16" Column="16" />
       <File FileName="PullDownSync.cs" Line="13" Column="13" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Resources\ProfileActivity.cs">
+    <Files>
+      <File FileName="MainActivity.cs" Line="29" Column="29" />
+      <File FileName="Resources\AddActivity.cs" Line="3" Column="3" />
+      <File FileName="Resources\Models\User.cs" Line="3" Column="3" />
+      <File FileName="Resources\BitmapHelper.cs" Line="1" Column="1" />
+      <File FileName="UserAdapter.cs" Line="1" Column="1" />
+      <File FileName="Resources\ProfileActivity.cs" Line="4" Column="4" />
+>>>>>>> origin/master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

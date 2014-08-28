@@ -8,13 +8,16 @@ using Android.Widget;
 using Android.OS;
 using Parse;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Java.IO;
 
 namespace BookFace
 {
 	[Activity (Label = "BookFace", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity, ListView.IOnItemClickListener
 	{
-		PullDownListView listView;
+		ListView listView;
+		User[] users;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -27,6 +30,7 @@ namespace BookFace
 
 			// Initialize view
 			SetContentView (Resource.Layout.Main);
+<<<<<<< HEAD
 			var layout = FindViewById<ScrollView> (Resource.Id.scrollView1);
 			listView = new PullDownListView(this);
 			//SetContentView (listView);
@@ -36,6 +40,11 @@ namespace BookFace
 				sync();
 			};
 			layout.AddView (listView);
+=======
+			listView = FindViewById<ListView> (Resource.Id.listView);
+			listView.OnItemClickListener = this;
+
+>>>>>>> origin/master
 			sync ();
 		}
 
@@ -45,6 +54,7 @@ namespace BookFace
 			Console.WriteLine ("entered async");
 			var query = new ParseQuery<User> ();
 			IEnumerable<User> result = await query.FindAsync ();
+<<<<<<< HEAD
 		
 			var userList = new List<User> (result);
 			listView.Adapter = new UserAdapter (this, userList.ToArray());
@@ -59,6 +69,10 @@ namespace BookFace
 			base.OnResume ();
 
 
+=======
+			users = new List<User> (result).ToArray();
+			listView.Adapter = new UserAdapter (this, users);
+>>>>>>> origin/master
 		}
 
 		public override bool OnCreateOptionsMenu(IMenu menu)
@@ -74,6 +88,9 @@ namespace BookFace
 			case Resource.Id.action_add_user:
 				StartActivity(typeof(AddActivity));
 				break;
+			case Resource.Id.action_sync:
+				sync ();
+				break;
 			}
 			return base.OnOptionsItemSelected(item);
 		}
@@ -82,7 +99,12 @@ namespace BookFace
 
 		public void OnItemClick (AdapterView parent, View view, int position, long id)
 		{
-			// TODO:Respond to row press 
+			User user = users [position];
+			Intent intent = new Intent (this, typeof(ProfileActivity));
+
+			intent.PutExtra ("User", user.ObjectId);
+
+			StartActivity (intent);
 		}
 
 		#endregion

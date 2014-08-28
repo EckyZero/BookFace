@@ -29,4 +29,10 @@ public static class BitmapHelper
 
         return resizedBitmap;
     }
+
+	public static Bitmap GetThumbnail(this Bitmap bitmap) 
+	{
+		double hToW = (bitmap.Height * 1.0) / (bitmap.Width * 1.0);
+		return Bitmap.CreateScaledBitmap (bitmap, 80, (int)(80 * hToW), true);
+	}
 }

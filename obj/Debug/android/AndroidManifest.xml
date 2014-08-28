@@ -4,6 +4,7 @@
   <application android:label="BookFace" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:icon="@drawable/icon" android:label="BookFace" android:name="bookface.MainActivity" />
     <activity android:label="AddActivity" android:name="bookface.AddActivity" />
+    <activity android:label="ProfileActivity" android:name="bookface.ProfileActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="BookFace.BookFace.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

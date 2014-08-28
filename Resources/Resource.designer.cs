@@ -66,23 +66,35 @@ namespace BookFace
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070005
-			public const int action_add_user = 2131165189;
-			
 			// aapt resource value: 0x7f070006
-			public const int action_save_user = 2131165190;
+			public const int action_add_user = 2131165190;
+			
+			// aapt resource value: 0x7f070008
+			public const int action_save_user = 2131165192;
+			
+			// aapt resource value: 0x7f070007
+			public const int action_sync = 2131165191;
 			
 			// aapt resource value: 0x7f070000
 			public const int imageButton = 2131165184;
 			
+<<<<<<< HEAD
+=======
+			// aapt resource value: 0x7f070003
+			public const int imageView = 2131165187;
+			
+			// aapt resource value: 0x7f070002
+			public const int listView = 2131165186;
+			
+>>>>>>> origin/master
 			// aapt resource value: 0x7f070001
 			public const int nameTextField = 2131165185;
 			
 			// aapt resource value: 0x7f070004
 			public const int nameTextView = 2131165188;
 			
-			// aapt resource value: 0x7f070003
-			public const int photoImageView = 2131165187;
+			// aapt resource value: 0x7f070005
+			public const int photoImageView = 2131165189;
 			
 			// aapt resource value: 0x7f070002
 			public const int scrollView1 = 2131165186;
@@ -107,7 +119,10 @@ namespace BookFace
 			public const int Main = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int UserCell = 2130903042;
+			public const int profile_activity = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int UserCell = 2130903043;
 			
 			static Layout()
 			{

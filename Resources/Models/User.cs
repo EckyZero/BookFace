@@ -1,5 +1,6 @@
 ﻿using System;
 using Parse;
+using System.Runtime.Serialization;
 
 namespace BookFace
 {
