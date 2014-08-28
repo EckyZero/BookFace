@@ -65,6 +65,9 @@ namespace BookFace
 			case Resource.Id.action_add_user:
 				StartActivity(typeof(AddActivity));
 				break;
+			case Resource.Id.action_sync:
+				sync ();
+				break;
 			}
 			return base.OnOptionsItemSelected(item);
 		}

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:\Users\daniel.esponda\Documents\GitHub\BookFace\bin\Debug\BookFace.dll
 C:\Users\daniel.esponda\Documents\GitHub\BookFace\ParseLib\Parse.iOS\Newtonsoft.Json.dll
 C:\Users\daniel.esponda\Documents\GitHub\BookFace\ParseLib\Parse.Android\Parse.Android.dll
+=======
+C:\Users\hans.stegemoeller\Documents\GitHub\BookFace\bin\Debug\BookFace.dll
+C:\Users\hans.stegemoeller\Documents\GitHub\BookFace\ParseLib\Parse.iOS\Newtonsoft.Json.dll
+C:\Users\hans.stegemoeller\Documents\GitHub\BookFace\ParseLib\Parse.Android\Parse.Android.dll
+>>>>>>> origin/master
