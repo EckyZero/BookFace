@@ -7,13 +7,14 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Parse;
+using System.Collections.Generic;
 
 namespace BookFace
 {
 	[Activity (Label = "BookFace", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity, ListView.IOnItemClickListener
 	{
-		User[] users = new User[]{};
+		ListView listView;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -26,9 +27,25 @@ namespace BookFace
 
 			// Initialize view
 			SetContentView (Resource.Layout.Main);
-			ListView listView = FindViewById<ListView> (Resource.Id.listView);
+			listView = FindViewById<ListView> (Resource.Id.listView);
 			listView.OnItemClickListener = this;
-			listView.Adapter = new UserAdapter (this, users);
+
+			poopie ();
+		}
+
+		private async void poopie ()
+		{
+			var query = new ParseQuery<User> ();
+			IEnumerable<User> result = await query.FindAsync ();
+			var userList = new List<User> (result);
+			listView.Adapter = new UserAdapter (this, userList.ToArray());
+		}
+
+		protected override void OnResume () 
+		{
+			base.OnResume ();
+
+
 		}
 
 		public override bool OnCreateOptionsMenu(IMenu menu)

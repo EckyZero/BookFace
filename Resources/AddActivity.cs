@@ -76,6 +76,7 @@ namespace BookFace
 				}
 				ParseFile file = new ParseFile ("photo.png", data);
 
+				//file.SaveAsync ().RunSynchronously ();  WHY?!?!?!?!?
 				SaveFile (file);
 
 				User user = new User ();
