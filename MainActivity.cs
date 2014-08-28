@@ -14,7 +14,7 @@ namespace BookFace
 	[Activity (Label = "BookFace", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity, ListView.IOnItemClickListener
 	{
-		ListView listView;
+		PullDownListView listView;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -27,8 +27,12 @@ namespace BookFace
 
 			// Initialize view
 			SetContentView (Resource.Layout.Main);
-			listView = FindViewById<ListView> (Resource.Id.listView);
+			listView = new PullDownListView(this);
+			SetContentView (listView);
 			listView.OnItemClickListener = this;
+			listView.mPulledDownListDelegate = delegate {
+				Console.WriteLine("PULLLED DOWN!!!!");
+			};
 
 			sync ();
 		}

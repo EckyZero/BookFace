@@ -61,6 +61,7 @@
     <Compile Include="UserAdapter.cs" />
     <Compile Include="Resources\AddActivity.cs" />
     <Compile Include="Resources\BitmapHelper.cs" />
+    <Compile Include="PullDownSync.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
