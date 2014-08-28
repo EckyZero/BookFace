@@ -20,12 +20,14 @@ using Uri = Android.Net.Uri;
 using Android.Media;
 
 using System.Drawing;
+using System.IO;
+using Parse;
 
 namespace BookFace
 {
 	public static class App{
-		public static File _file;
-		public static File _dir;     
+		public static Java.IO.File _file;
+		public static Java.IO.File _dir;     
 		public static Bitmap bitmap;
 	}
 
@@ -33,6 +35,7 @@ namespace BookFace
 	public class AddActivity : Activity
 	{
 		private ImageButton button;
+		private EditText nameField;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -44,6 +47,8 @@ namespace BookFace
 				CreateDirectoryForPictures();
 
 				button = FindViewById<ImageButton>(Resource.Id.imageButton);
+				nameField = FindViewById<EditText> (Resource.Id.nameTextField);
+
 				if (App.bitmap != null) {
 					button.SetImageBitmap (App.bitmap);
 					App.bitmap = null;
@@ -64,7 +69,21 @@ namespace BookFace
 			{
 			case Resource.Id.action_save_user:
 			
-				User user = new User (App.bitmap
+				byte[] data;
+				using (var stream = new MemoryStream())
+				{
+					App.bitmap.Compress(Bitmap.CompressFormat.Png, 0, stream);
+					data = stream.ToArray();
+				}
+				ParseFile file = new ParseFile ("resume.png", data);
+
+				SaveFile (file);
+
+				User user = new User ();
+				user.Name = nameField.Text;
+				user.Password = "Tester";
+				user.Photo = file;
+				user.SignUpAsync ();
 
 				break;
 			}
@@ -81,7 +100,7 @@ namespace BookFace
 
 		private void CreateDirectoryForPictures()
 		{
-			App._dir = new File(Android.OS.Environment.GetExternalStoragePublicDirectory(Environment.DirectoryPictures), "CameraAppDemo");
+			App._dir = new Java.IO.File(Android.OS.Environment.GetExternalStoragePublicDirectory(Environment.DirectoryPictures), "CameraAppDemo");
 			if (!App._dir.Exists())
 			{
 				App._dir.Mkdirs();
@@ -92,7 +111,7 @@ namespace BookFace
 		{
 			Intent intent = new Intent(MediaStore.ActionImageCapture);
 
-			App._file = new File(App._dir, String.Format("myPhoto_{0}.jpg", Guid.NewGuid()));
+			App._file = new Java.IO.File(App._dir, String.Format("myPhoto_{0}.jpg", Guid.NewGuid()));
 
 			intent.PutExtra(MediaStore.ExtraOutput, Android.Net.Uri.FromFile(App._file));
 
@@ -117,6 +136,11 @@ namespace BookFace
 			App.bitmap = App._file.Path.LoadAndResizeBitmap (width, height);
 
 			button.SetImageBitmap (App.bitmap);
+		}
+
+		private async void SaveFile(ParseFile file)
+		{
+			await file.SaveAsync ();
 		}
 	}
 }

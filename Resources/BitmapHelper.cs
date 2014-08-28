@@ -1,4 +1,5 @@
 ﻿using Android.Graphics;
+using System;
 
 public static class BitmapHelper
 {

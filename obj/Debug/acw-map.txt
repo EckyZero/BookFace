@@ -1,7 +1,6 @@
 BookFace.MainActivity;bookface.MainActivity
 BookFace.UserAdapter;bookface.UserAdapter
 BookFace.AddActivity;bookface.AddActivity
-BookFace.ParseApp;bookface.ParseApp
 Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.Content.Loader.IOnLoadCompleteListenerImplementor;mono.android.support.v4.content.Loader_OnLoadCompleteListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

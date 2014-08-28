@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="BookFace.BookFace">
   <uses-sdk android:minSdkVersion="19" />
-  <application android:label="BookFace" android:name="bookface.ParseApp" android:debuggable="true">
+  <application android:label="BookFace" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:icon="@drawable/icon" android:label="BookFace" android:name="bookface.MainActivity" />
     <activity android:label="AddActivity" android:name="bookface.AddActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="BookFace.BookFace.mono.MonoRuntimeProvider.__mono_init__" />

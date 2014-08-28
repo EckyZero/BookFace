@@ -34,7 +34,7 @@ namespace BookFace
 			TextView nameLabel = view.FindViewById<TextView> (Resource.Id.nameTextView);
 			ImageView imageView = view.FindViewById<ImageView> (Resource.Id.photoImageView);
 
-			nameLabel.Text = user.name;
+			nameLabel.Text = user.Name;
 
 			return view;
 		}

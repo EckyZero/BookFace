@@ -1,17 +1,20 @@
 ﻿using System;
-using Android.Media;
+using Parse;
 
 namespace BookFace
 {
-	public class User
+	public class User : ParseUser
 	{
-		public Image photo;
-		public string name;
+		[ParseFieldName("username")]
+		public string Name {
+			get { return GetProperty<string> (); }
+			set { SetProperty<string> (value); }
+		}
 
-		public User (Image photo, string name)
-		{
-			this.photo = photo;
-			this.name = name;
+		[ParseFieldName("photo")]
+		public ParseFile Photo {
+			get { return GetProperty<ParseFile> (); }
+			set { SetProperty<ParseFile> (value); }
 		}
 	}
 }

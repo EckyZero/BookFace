@@ -60,7 +60,6 @@
     <Compile Include="UserAdapter.cs" />
     <Compile Include="Resources\AddActivity.cs" />
     <Compile Include="Resources\BitmapHelper.cs" />
-    <Compile Include="App.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -75,6 +74,7 @@
     <AndroidResource Include="Resources\drawable\add.png" />
     <AndroidResource Include="Resources\menu\ActionBar.axml" />
     <AndroidResource Include="Resources\layout\add_layout.axml" />
+    <AndroidResource Include="Resources\menu\save_actionbar.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
