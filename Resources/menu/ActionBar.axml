@@ -5,4 +5,7 @@
           android:icon="@drawable/add"
           android:title="Add Item"
           android:showAsAction="ifRoom" />
+  <item android:id="@+id/action_sync"
+          android:title="Sync"
+          android:showAsAction="ifRoom" />
 </menu>    
