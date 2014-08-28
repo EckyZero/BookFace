@@ -70,12 +70,11 @@ namespace BookFace
 			case Resource.Id.action_save_user:
 			
 				byte[] data;
-				using (var stream = new MemoryStream())
-				{
-					App.bitmap.Compress(Bitmap.CompressFormat.Png, 0, stream);
-					data = stream.ToArray();
+				using (var stream = new MemoryStream ()) {
+					App.bitmap.Compress (Bitmap.CompressFormat.Png, 0, stream);
+					data = stream.ToArray ();
 				}
-				ParseFile file = new ParseFile ("resume.png", data);
+				ParseFile file = new ParseFile ("photo.png", data);
 
 				SaveFile (file);
 
@@ -84,6 +83,8 @@ namespace BookFace
 				user.Password = "Tester";
 				user.Photo = file;
 				user.SignUpAsync ();
+
+				base.OnBackPressed ();
 
 				break;
 			}
