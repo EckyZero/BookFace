@@ -27,22 +27,31 @@ namespace BookFace
 
 			// Initialize view
 			SetContentView (Resource.Layout.Main);
+			var layout = FindViewById<ScrollView> (Resource.Id.scrollView1);
 			listView = new PullDownListView(this);
-			SetContentView (listView);
+			//SetContentView (listView);
 			listView.OnItemClickListener = this;
 			listView.mPulledDownListDelegate = delegate {
 				Console.WriteLine("PULLLED DOWN!!!!");
+				sync();
 			};
-
+			layout.AddView (listView);
 			sync ();
 		}
 
 		private async void sync ()
 		{
+			DateTime date = DateTime.Now;
+			Console.WriteLine ("entered async");
 			var query = new ParseQuery<User> ();
 			IEnumerable<User> result = await query.FindAsync ();
+		
 			var userList = new List<User> (result);
 			listView.Adapter = new UserAdapter (this, userList.ToArray());
+		//	listView.SmoothScrollToPosition (4);
+			TimeSpan time = DateTime.Now - date;
+			Console.WriteLine ("left async "+ time.Milliseconds);
+
 		}
 
 		protected override void OnResume () 

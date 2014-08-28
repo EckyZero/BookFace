@@ -69,7 +69,6 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\UserCell.axml" />
@@ -77,6 +76,7 @@
     <AndroidResource Include="Resources\menu\ActionBar.axml" />
     <AndroidResource Include="Resources\layout\add_layout.axml" />
     <AndroidResource Include="Resources\menu\save_actionbar.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

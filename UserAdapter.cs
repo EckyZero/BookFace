@@ -37,18 +37,33 @@ namespace BookFace
 			User user = users [position];
 			ParseFile photo = user.Photo;
 			var view = activity.LayoutInflater.Inflate (Resource.Layout.UserCell, parent, false);
-			TextView nameLabel = view.FindViewById<TextView> (Resource.Id.nameTextView);
 			ImageView imageView = view.FindViewById<ImageView> (Resource.Id.photoImageView);
-			WebClient webClient = new WebClient ();
-			byte[] bytes = webClient.DownloadData (photo.Url);
-			Bitmap bitmap = BitmapFactory.DecodeByteArray (bytes, 0, bytes.Length);
-
-			imageView.SetImageBitmap (bitmap);
+			TextView nameLabel = view.FindViewById<TextView> (Resource.Id.nameTextView);
+			GetImage (imageView, photo.Url);
 			nameLabel.Text = user.Name;
 
 			return view;
 		}
 
+		public void GetImage(ImageView imageView, Uri url) {
+	
+			WebClient webClient = new WebClient ();
+	
+			webClient.DownloadDataCompleted += delegate(object e, DownloadDataCompletedEventArgs data) {
+				if(data.Error == null) {
+				byte[] bytes = data.Result;
+				Bitmap bitmap = BitmapFactory.DecodeByteArray (bytes, 0, bytes.Length);
+					Console.WriteLine("SIZE OF FILE: "+bytes.Length);
+				imageView.SetImageBitmap (bitmap);
+				}
+
+			};
+		//	webClient.do
+	
+			Console.WriteLine ("Going to d/l " + url.AbsolutePath);
+			webClient.DownloadDataAsync (url);
+	
+		}
 		public override int Count {
 			get {
 				return users.Length;
